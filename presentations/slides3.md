@@ -13,10 +13,12 @@ mdc: true
 routerMode: hash
 ---
 
-# 2
+# 1
 
-This is presentation 2
+This is presentation 3
 
+---
+layout: standard
 ---
 
 Slide 2

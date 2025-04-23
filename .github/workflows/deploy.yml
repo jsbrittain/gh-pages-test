@@ -35,10 +35,7 @@ jobs:
         run: |
           mkdir -p dist
           cp site/index.html dist/
-          for file in *.md; do
-            if [[ "$file" == "README.md" ]]; then
-              continue
-            fi
+          for file in presentations/*.md; do
             name=$(basename "$file" .md)
             echo "Building $name..."
             npx slidev build "$file" --out "dist/$name" --base "/${{github.event.repository.name}}/$name/"
