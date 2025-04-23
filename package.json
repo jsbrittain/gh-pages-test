@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "slidev build",
-    "build-all": "slidev build *.md",
+    "build-all": "slidev build slides1.md --out dist/slides1 --base /slides1/ && slidev build slides2.md --out dist/slides2 --base /slides2/",
     "dev": "slidev --open",
     "export": "slidev export"
   },
