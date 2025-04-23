@@ -38,7 +38,7 @@ jobs:
           for file in presentations/*.md; do
             name=$(basename "$file" .md)
             echo "Building $name..."
-            npx slidev build "$file" --out "dist/$name" --base "/${{github.event.repository.name}}/$name/"
+            npx slidev build "$file" --out "../dist/$name" --base "/${{github.event.repository.name}}/$name/"
             echo "<li><a href=\"./$name/\">$name</a></li>" >> dist/index.html
           done
           cat site/index_backend.html >> dist/index.html
