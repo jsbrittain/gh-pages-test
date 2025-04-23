@@ -32,8 +32,7 @@ jobs:
         run: nci
 
       - name: Build
-        run: npm run build-all
-        run: cp index.html dist/
+        run: npm run build-all && cp index.html dist/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
